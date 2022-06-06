@@ -1,0 +1,11 @@
+#function start
+def funcion1(n):
+    if n == 1:
+        return 1
+    else:
+        return n+funcion1(n-1)
+
+n = int(input("Enter the n :"))
+while n!= -1:
+    print(funcion1(n))
+    n = int(input("Enter the n :"))

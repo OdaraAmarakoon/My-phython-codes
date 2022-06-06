@@ -1,0 +1,21 @@
+#function declaration
+def RecursiveFunction(n):
+    if n==1:
+        return 1;
+    else:
+        return 3*(RecursiveFunction(n-1)) + 1;
+
+
+#Iterate until user input -1 as input
+while(True):
+   num = int(input("Enter a number :"));
+
+   #check user input
+   if (num == -1):
+       print("Output: Finished");
+       break;
+
+   #function calling
+   else:
+       output = RecursiveFunction(num);
+       print(output);
